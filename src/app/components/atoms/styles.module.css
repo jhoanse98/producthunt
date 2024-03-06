@@ -1,0 +1,14 @@
+.componente{
+    padding-left: 2rem;
+}
+
+.componente a{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--gris2);
+    font-family: 'Poppins';    
+}
+
+.componente a:last-of-type {
+    margin-right: 0;
+}

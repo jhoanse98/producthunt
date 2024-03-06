@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "./components/atoms/Header";
+import { nunito_sans, poppins, roboto_slab } from "./utils/fonts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <title>Product Hunt Firebase y Next.js</title>
+      <body className={`${nunito_sans} ${poppins} ${roboto_slab}`}>
+        <Header />
         <main>
           {children}
         </main>
