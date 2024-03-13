@@ -31,7 +31,13 @@ const config: Config = {
       },
       textIndent: {
         99: '-99999px',
-      }
+      },
+      maxWidth:{
+        600: '600px',
+      },
+      flexBasis:{
+        'flex-basis-150': '150px',
+      },
     },
   },
   plugins: [],

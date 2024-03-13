@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/atoms/Header";
+import MyApp from "./_app";
 import { nunito_sans, poppins, roboto_slab } from "./utils/fonts";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,7 +23,7 @@ export default function RootLayout({
       <body className={`${nunito_sans} ${poppins} ${roboto_slab}`}>
         <Header />
         <main>
-          {children}
+          <MyApp>{children}</MyApp>
         </main>
       </body>
     </html>

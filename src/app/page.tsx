@@ -1,7 +1,10 @@
 import Image from "next/image";
+import firebase, { FirebaseContext } from "./firebase";
 
-export default function Home() {
+export default function Home({children,}:Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <h1 className="text-red-500">inicio</h1>
+    <h1>inicio</h1>
   );
 }
